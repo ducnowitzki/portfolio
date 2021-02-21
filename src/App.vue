@@ -23,8 +23,8 @@ export default {
   },
   data() {
     return {
-      page: "about-me"
-    }
+      page: "about-me",
+    };
   },
   methods: {
     setPage(page) {
@@ -35,12 +35,13 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 #root {
-  font-family: "eurostile", sans-serif;
+  font-family: "Varela Round", sans-serif;
   text-align: center;
   color: #525d68 !important;
   /* background-color: white; */
   min-height: 100vh;
-  padding-top: 100px;
 }
 </style>

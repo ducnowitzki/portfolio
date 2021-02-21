@@ -1,7 +1,17 @@
 <template>
-  <b-navbar class="mx-5" type="dark" fixed="top" toggleable="sm">
-    <b-navbar-brand href="#">MDN</b-navbar-brand>
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+  <b-navbar class="flex-column flex-md-row" sticky type="light" toggleable="sm">
+    <b-navbar-brand class="mr-0 mr-md-2" href="#">MDN</b-navbar-brand>
+
+    <b-navbar-nav class="flex-row flex-column-md">
+      <b-nav-item class="mx-3 mx-md-0" :active="aboutMe" @click="setPage('about-me')"
+        >About Me</b-nav-item
+      >
+      <b-nav-item class="mx-3 mx-md-0" :active="myCv" @click="setPage('my-cv')">CV</b-nav-item>
+      <b-nav-item class="mx-3 mx-md-0" :active="contactMe" @click="setPage('contact-me')"
+        >Contact</b-nav-item
+      >
+    </b-navbar-nav>
+    <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
         <b-nav-item :active="aboutMe" @click="setPage('about-me')"
@@ -12,7 +22,7 @@
           >Contact</b-nav-item
         >
       </b-navbar-nav>
-    </b-collapse>
+    </b-collapse> -->
   </b-navbar>
 </template>
 
@@ -43,9 +53,11 @@ export default {
   background-color: #06BC9B !important;
 } */
 
-/* .navbar {
-  padding-top: 20px;
-} */
+.navbar {
+  background-color: white;
+  border-bottom: lightgray solid 1px;
+}
+
 
 .navbar-brand,
 .nav .navbar-brand:hover {
@@ -63,7 +75,7 @@ export default {
 
 .navbar-nav a {
   color: #525d68 !important;
-  font-size: large;
+  font-size: medium;
 }
 
 .navbar-nav a:hover {
@@ -73,6 +85,6 @@ export default {
 .navbar-nav a.active {
   /* font-weight: bold; */
   color: #06bc9b !important;
-  border-bottom: #06bc9b solid .25rem;
+  /* border-bottom: #06bc9b solid 0.25rem; */
 }
 </style>
