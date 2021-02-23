@@ -4,7 +4,12 @@
     <about-me v-if="page === 'about-me'"></about-me>
     <my-cv v-else-if="page === 'my-cv'"></my-cv>
     <contact-me v-else-if="page === 'contact-me'"></contact-me>
+    
     <p v-else>Something went wrong.</p>
+
+    <!-- <about-me class="cmp"></about-me>
+    <my-cv class="cmp"></my-cv>
+    <contact-me class="cmp"></contact-me> -->
   </div>
 </template>
 
@@ -42,6 +47,10 @@ export default {
   text-align: center;
   color: #525d68 !important;
   /* background-color: white; */
+  min-height: 100vh;
+}
+
+.cmp {
   min-height: 100vh;
 }
 </style>

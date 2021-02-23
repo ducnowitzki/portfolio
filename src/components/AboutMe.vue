@@ -40,7 +40,6 @@
 } */
 .about-me {
   padding-top: 8%;
-  min-height: 100vh;
 }
 
 h1 {

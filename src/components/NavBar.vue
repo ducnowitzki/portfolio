@@ -1,12 +1,12 @@
 <template>
-  <b-navbar class="flex-column flex-md-row" sticky type="light" toggleable="sm">
+  <b-navbar class="flex-column flex-md-row mb-3 mb-md-4" sticky type="light" toggleable="sm">
     <b-navbar-brand class="mr-0 mr-md-2" href="#">MDN</b-navbar-brand>
 
     <b-navbar-nav class="flex-row flex-column-md">
       <b-nav-item class="mx-3 mx-md-0" :active="aboutMe" @click="setPage('about-me')"
         >About Me</b-nav-item
       >
-      <b-nav-item class="mx-3 mx-md-0" :active="myCv" @click="setPage('my-cv')">CV</b-nav-item>
+      <b-nav-item class="mx-3 mx-md-0" :active="myCv" @click="setPage('my-cv')">Resume</b-nav-item>
       <b-nav-item class="mx-3 mx-md-0" :active="contactMe" @click="setPage('contact-me')"
         >Contact</b-nav-item
       >
